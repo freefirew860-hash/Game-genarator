@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LDM GAME — a professional game development studio building next-generation mobile, PC, 3D and multiplayer games." />
+  <meta name="keywords" content="game development, LDM GAME, 3D games, mobile games, multiplayer games, game studio" />
+  <meta name="theme-color" content="#05060f" />
+  <title>LDM GAME — Building The Next Generation Of Gaming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">LDM<span>GAME</span></div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo" aria-label="LDM GAME home">
+        <span class="logo-icon">◢</span> LDM<span class="logo-accent">GAME</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#games" class="nav-link">Our Games</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#team" class="nav-link">Our Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">GAME DEVELOPMENT STUDIO</p>
+      <h1 class="hero-title reveal">LDM <span>GAME</span></h1>
+      <h2 class="hero-subtitle reveal">BUILDING THE NEXT GENERATION OF GAMING</h2>
+      <p class="hero-tagline reveal">We Create Worlds. We Build Experiences. We Make Games Legendary.</p>
+      <div class="hero-buttons reveal">
+        <a href="#games" class="btn btn-primary">EXPLORE OUR GAMES</a>
+        <a href="#contact" class="btn btn-outline">START A PROJECT</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-target="25">0</span><span class="stat-label">Games Shipped</span></div>
+        <div class="stat"><span class="stat-num" data-target="40">0</span><span class="stat-label">Team Members</span></div>
+        <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Industry Awards</span></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Years of Craft</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">ABOUT THE STUDIO</p>
+        <h2 class="section-title">WHO WE <span>ARE</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>LDM GAME is an innovative game development studio dedicated to creating immersive, exciting, and next-generation gaming experiences. Our mission is to transform creative ideas into extraordinary digital worlds.</p>
+          <p>From high-octane action titles to vast multiplayer universes, our team of engineers, artists and designers crafts every experience with passion, precision and a relentless obsession with quality.</p>
+          <div class="about-features">
+            <div class="feature"><span class="feature-icon">◈</span><div><h4>Next-Gen Technology</h4><p>Built on cutting-edge engines and pipelines.</p></div></div>
+            <div class="feature"><span class="feature-icon">◈</span><div><h4>Player-First Design</h4><p>Every mechanic tested, tuned and polished.</p></div></div>
+            <div class="feature"><span class="feature-icon">◈</span><div><h4>Cross-Platform Reach</h4><p>Mobile, PC and console experiences.</p></div></div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="holo-card">
+            <div class="holo-ring"></div>
+            <div class="holo-core">LDM</div>
+            <div class="holo-label">ENGINE // V4.2 ONLINE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GAMES ===================== -->
+  <section class="section games" id="games">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">OUR TITLES</p>
+        <h2 class="section-title">OUR <span>GAMES</span></h2>
+        <p class="section-desc">A growing library of worlds — each one crafted to be legendary.</p>
+      </div>
+      <div class="games-grid" id="gamesGrid">
+        <!-- Game cards are rendered by script.js — add new games in the GAMES array there -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">WHAT WE DO</p>
+        <h2 class="section-title">OUR <span>SERVICES</span></h2>
+        <p class="section-desc">Full-cycle game development — from the first sketch to global launch.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== TEAM ===================== -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">THE CREW</p>
+        <h2 class="section-title">OUR <span>TEAM</span></h2>
+        <p class="section-desc">The people behind the worlds.</p>
+      </div>
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOWCASE ===================== -->
+  <section class="section showcase" id="showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">PORTFOLIO</p>
+        <h2 class="section-title">PROJECT <span>SHOWCASE</span></h2>
+        <p class="section-desc">Screenshots, concept art and development moments from our studio floor.</p>
+      </div>
+      <div class="showcase-track-wrap reveal">
+        <button class="showcase-btn prev" id="showcasePrev" aria-label="Previous">&#10094;</button>
+        <div class="showcase-track" id="showcaseTrack"></div>
+        <button class="showcase-btn next" id="showcaseNext" aria-label="Next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">START A <span>PROJECT</span></h2>
+        <p class="section-desc">Tell us about your idea — let's build something legendary together.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="projectType">Project Type</label>
+            <select id="projectType" name="projectType" required>
+              <option value="">Select a project type…</option>
+              <option>Mobile Game</option>
+              <option>PC Game</option>
+              <option>3D Game</option>
+              <option>Multiplayer Game</option>
+              <option>Action / Adventure Game</option>
+              <option>Game UI/UX Design</option>
+              <option>Character Design</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">SUBMIT MESSAGE</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <h3>STUDIO HQ</h3>
+            <p>LDM GAME Development Studio<br/>Innovation District, Tech Park<br/>hello@ldmgame.dev</p>
+          </div>
+          <div class="info-card">
+            <h3>FOLLOW THE JOURNEY</h3>
+            <div class="social-row">
+              <a href="#" class="social-icon" aria-label="YouTube" title="YouTube">▶</a>
+              <a href="#" class="social-icon" aria-label="Facebook" title="Facebook">f</a>
+              <a href="#" class="social-icon" aria-label="Instagram" title="Instagram">◎</a>
+              <a href="#" class="social-icon" aria-label="TikTok" title="TikTok">♪</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="logo-icon">◢</span> LDM<span class="logo-accent">GAME</span></a>
+        <p class="footer-tagline">Creating The Future Of Gaming.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#games">Our Games</a>
+        <a href="#services">Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="YouTube" class="social-icon">▶</a>
+        <a href="#" aria-label="Facebook" class="social-icon">f</a>
+        <a href="#" aria-label="Instagram" class="social-icon">◎</a>
+        <a href="#" aria-label="TikTok" class="social-icon">♪</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>LDM GAME © 2026 — Creating The Future Of Gaming. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">▲</button>
+
+  <!-- Game detail modal -->
+  <div class="modal" id="gameModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+      <div class="modal-cover" id="modalCover"></div>
+      <div class="modal-body">
+        <p class="modal-category" id="modalCategory"></p>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
